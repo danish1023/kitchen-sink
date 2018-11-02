@@ -629,5 +629,17 @@
   <script src="js/routes.js"></script>
   <script src="js/app.js"></script>
   <script type="text/javascript" src="cordova.js"></script>
+  <script>
+    document.addEventListener("deviceready", onDeviceReady, false);
+    function onDeviceReady() {
+      function successFunction() {
+        // success
+      }
+      function errorFunction(error) {
+        // error
+      }
+      AndroidFullScreen.immersiveMode(successFunction, errorFunction);
+    }
+    </script>
 </body>
 </html>
